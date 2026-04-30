@@ -4,23 +4,24 @@ package model;
 public class Customer {
     private int id;
     private String fullname;
-    private String phone;
+    private String phoneNumber;
 
-    public Customer(int id, String name, String phone) {
+    public Customer(int id, String name, String phoneNumber) {
         this.id = id;
         this.fullname = name;
-        this.phone = phone;
+        this.phoneNumber = phoneNumber;
     }
 
     public int getId() { return id; }
     public String getName() { return fullname; }
-    public String getPhone() { return phone; }
+    public String getphoneNumber() { return phoneNumber; }
 
     public void setName(String name) { this.fullname = name; }
-    public void setPhone(String phone) { this.phone = phone; }
+    public void setphoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 
     @Override
     public String toString() {
-        return id + " | " + name + " | " + phone;
+        return id + " | " + name + " | " + phoneNumber;
     }
+    
 }
