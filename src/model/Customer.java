@@ -3,20 +3,20 @@ package model;
 
 public class Customer {
     private int id;
-    private String name;
+    private String fullname;
     private String phone;
 
     public Customer(int id, String name, String phone) {
         this.id = id;
-        this.name = name;
+        this.fullname = name;
         this.phone = phone;
     }
 
     public int getId() { return id; }
-    public String getName() { return name; }
+    public String getName() { return fullname; }
     public String getPhone() { return phone; }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name) { this.fullname = name; }
     public void setPhone(String phone) { this.phone = phone; }
 
     @Override
