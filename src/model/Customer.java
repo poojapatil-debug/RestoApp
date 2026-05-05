@@ -2,17 +2,17 @@ package model;
 
 
 public class Customer {
-    private int id;
+    private int id1;
     private String name;
     private String phone;
 
-    public Customer(int id, String name, String phone) {
-        this.id = id;
+    public Customer(int id1, String name, String phone) {
+        this.id1 = id1;
         this.name = name;
         this.phone = phone;
     }
 
-    public int getId() { return id; }
+    public int getid() { return id1; }
     public String getName() { return name; }
     public String getPhone() { return phone; }
 
@@ -21,6 +21,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return id + " | " + name + " | " + phone;
+        return id1 + " | " + name + " | " + phone;
     }
 }
